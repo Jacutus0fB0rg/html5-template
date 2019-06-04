@@ -34,6 +34,25 @@
     const x = 17
     console.log('To mix variables in with your string, use the backtick in the console command instead of single quotes')
     console.log(`The value of x: ${x}`)
+
+    var specifiedNumberString = prompt("Input an integer number:")
+    
+    const specifiedNumber = parseInt(specifiedNumberString)
+
+    console.log(`The specified number is ${specifiedNumber}`)
+
+    function computeThenPrintLineOfMultiplicationTable(targetSpecifiedNumber,targetMultiplier) {
+      var targetProduct = targetSpecifiedNumber*targetMultiplier
+      console.log(`${targetSpecifiedNumber} * ${targetMultiplier} = ${targetProduct}`)
+    }
+
+    for (let timesTable=0;timesTable<=specifiedNumber;timesTable++) {
+      console.log(`Times Table for ${timesTable} from 0-100`)
+      for (let multiplier=0;multiplier<=100;multiplier++){
+        computeThenPrintLineOfMultiplicationTable(timesTable,multiplier)
+      }
+    }
+
   </script>
 </body>
 </html>
